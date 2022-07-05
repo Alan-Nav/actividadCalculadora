@@ -1,0 +1,104 @@
+:root {
+  --fuente: "Red Hat Display", sans-serif;
+
+  --base: #1a4301;
+  --base-claro: #73a942;
+  --teclas: #245501;
+  --teclas-oscuras: #143601;
+  --teclas-hover: #538d22;
+  --claro: #d6d6bf;
+  --medio: #c2c2bd;
+  --negro: #000;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: var(--fuente);
+  font-size: 1.6rem;
+  line-height: 2;
+  background-color: var(--medio);
+  color: var(--claro);
+}
+
+.calculator {
+  background-color: var(--base);
+  width: 30%;
+  margin: 10rem auto 0;
+}
+
+button {
+  height: 6rem;
+}
+
+.display {
+  text-align: right;
+  padding: 2rem 1.5rem 0 0;
+}
+.m-buttons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.m-buttons button {
+  border: none;
+  background-color: var(--base);
+  color: var(--base-claro);
+  font-weight: bold;
+}
+
+.m-buttons button:hover {
+  background-color: var(--teclas);
+  color: var(--claro);
+}
+
+.m-buttons .activo {
+  color: var(--claro);
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.keyboard button {
+  margin: 0.1rem;
+  border: none;
+}
+
+.tecla1 {
+  background-color: var(--teclas);
+  color: var(--claro);
+}
+
+.tecla1:hover {
+  background-color: var(--teclas-hover);
+  color: var(--claro);
+}
+
+.tecla2 {
+  background-color: var(--teclas-oscuras);
+  color: var(--claro);
+}
+
+.tecla2:hover {
+  background-color: var(--teclas-hover);
+  color: var(--claro);
+}
+
+.igual {
+  background-color: var(--base-claro);
+  color: var(--claro);
+}
+
+.igual:hover {
+  background-color: var(--teclas-hover);
+  color: var(--claro);
+}
